@@ -1,2 +1,24 @@
 server:
   port: 8080
+
+spring:
+  #2021/01/24 db세팅은 오라클이기이 확인 중
+  #datasource:
+  #  dataSourceClassName: org.h2.jdbcx.JdbcDataSource
+  #  url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1
+  #  username:
+  #  password:
+  jpa:
+    #database-platform: org.hibernate.dialect.H2Dialect
+    #database: H2
+    generate-ddl: false
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+    properties:
+      hibernate.cache.use_second_level_cache: true
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: true
+      hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
