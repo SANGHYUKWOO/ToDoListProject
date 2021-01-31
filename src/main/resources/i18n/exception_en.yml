@@ -1,0 +1,25 @@
+#exception_en
+unknown:
+  code: "-9999"
+  msg: "i dont know"
+userNotFound:
+  code: "-1000"
+  msg: "that human nothing"
+emailSigninFailed:
+  code: "-1001"
+  msg: "Your account does not exist or your email or password is incorrect."
+entryPointException:
+  code: "-1002"
+  msg: "You do not have permission to access this resource."
+notOwner:
+  code: "-1006"
+  msg: "You are not the owner of this resource."
+resourceNotExist:
+  code: "-1007"
+  msg: "This resource does not exist."
+accessDenied:
+  code: "-1003"
+  msg: "accessed deny"
+existingUser:
+  code: "-1005"
+  msg: "You are an existing member."
